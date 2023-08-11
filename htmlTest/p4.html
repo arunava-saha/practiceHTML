@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1,
+        h3 {
+            border-bottom: 0.2pc solid #000;
+            text-align: center;
+            margin: auto;
+            padding: 7px;
+            /* width: 80%; */
+        }
+
+        .lower-alpha-list {
+            padding-left: 0%;
+        }
+
+        .lower-alpha-list li {
+            list-style: none;
+            counter-increment: lower-alpha-counter;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .lower-alpha-list li::before {
+            content: "(" counter(lower-alpha-counter, lower-alpha) ") ";
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        footer p span {
+            margin-left: 45px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Oswaal Publications</h1>
+        <h3>India's Leading Publication House</h3>
+    </header>
+    <div class="contain">
+        <h5>Available Questions Bank</h5>
+        <ol class="lower-alpha-list">
+            <li>Computer</li>
+            <li>History</li>
+            <li>Maths</li>
+        </ol>
+    </div>
+    <footer>
+        <p>Design by <br> <span>M.saif Naqvt</span></p>
+    </footer>
+</body>
+
+</html>
