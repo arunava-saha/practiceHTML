@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <center>
+        <h1>JOB ENQUIRY FORM </h1>
+    </center>
+</head>
+
+<body>
+    <form method="post"" align = " center">
+        User ID:
+        <input type=" text" id="userId" name="userId" required>
+        <br>
+        Password:
+        <input type="password" id="password" name="password" required>
+        <br>
+        Gender:
+
+        <input type="radio" id="male" name="gender" value="male" checked>
+        Male
+        <input type="radio" id="female" name="gender" value="female">
+        Female
+        <input type="radio" id="other" name="gender" value="other">
+        Other
+
+        <br>
+        Interested in:
+        <input type="checkbox" id="html" name="interests[]" value="html">
+        HTML
+        <input type="checkbox" id="c" name="interests[]" value="c">
+        C
+        <input type="checkbox" id="java" name="interests[]" value="java">
+        Java
+
+        <br>
+        Describe Your Skills:
+        <textarea id="skills" name="skills" rows="5" cols="30"></textarea>
+        <br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+
+</body>
+
+</html>
